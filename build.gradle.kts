@@ -21,6 +21,7 @@ java.sourceCompatibility = JavaVersion.VERSION_21
 
 dependencies {
     compileOnly("com.github.PowerNukkitX:PowerNukkitX:357b0ce74a")
+    implementation("commons-validator:commons-validator:1.8.0")
 }
 
 idea {

@@ -7,11 +7,3 @@ author: MrHoller
 description: TPServer plugin
 website: https://github.com/MrHoller
 prefix: "TPServer"
-
-commands:
-  tpserver:
-    description: "TPServer command"
-    permission: "mrholler.tpserver"
-permissions:
-  mrholler.tpserver:
-    default: true
