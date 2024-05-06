@@ -4,6 +4,8 @@ import cn.nukkit.Player;
 import cn.nukkit.Server;
 import cn.nukkit.command.Command;
 import cn.nukkit.command.CommandSender;
+import cn.nukkit.command.data.CommandParamType;
+import cn.nukkit.command.data.CommandParameter;
 import com.google.common.net.InetAddresses;
 import org.apache.commons.validator.routines.DomainValidator;
 
@@ -13,6 +15,13 @@ public class TPServerCommand extends Command {
     public TPServerCommand() {
         super("tpserver");
         setPermission("mrholler.tpserver");
+        this.commandParameters.clear();
+        this.commandParameters.put("default",
+                new CommandParameter[]{
+                        CommandParameter.newType("ip or domain", CommandParamType.STRING),
+                        CommandParameter.newType("port", true, CommandParamType.INT)
+                });
+        this.enableParamTree();
     }
 
     @Override
