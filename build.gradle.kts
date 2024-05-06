@@ -11,20 +11,18 @@ repositories {
     maven("https://jitpack.io")
     maven("https://repo.opencollab.dev/maven-releases/")
     maven("https://repo.opencollab.dev/maven-snapshots/")
+    maven { setUrl("https://jitpack.io") }
 }
 
-group = "cn.powernukkitx"
+group = "ru.mrholler"
 version = "1.0.0-SNAPSHOT"
-description = "powernukkitx example plugin"
-java.sourceCompatibility = JavaVersion.VERSION_17
+description = "TPServer plugin"
+java.sourceCompatibility = JavaVersion.VERSION_21
 
 dependencies {
-    //Check it out https://jitpack.io/#PowerNukkitX/PowerNukkitX
-    compileOnly("com.github.PowerNukkitX:PowerNukkitX:master-SNAPSHOT")
-//    compileOnly(files("D:\\IdeaProjects\\PowerNukkitX\\build\\powernukkitx-2.0.0-SNAPSHOT-all.jar"))
+    compileOnly("com.github.PowerNukkitX:PowerNukkitX:357b0ce74a")
 }
 
-//Automatically download dependencies source code
 idea {
     module {
         isDownloadSources = true
