@@ -15,7 +15,7 @@ repositories {
 }
 
 group = "ru.mrholler"
-version = "1.0.0-SNAPSHOT"
+version = "1.0.2-SNAPSHOT"
 description = "TPServer plugin"
 java.sourceCompatibility = JavaVersion.VERSION_21
 
